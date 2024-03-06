@@ -15,6 +15,8 @@ namespace FormComplejo
 
         public static Complejo Leer(string complejo)
         {
+
+
             string[] realComplejo = complejo.Split('+');
             float real = float.Parse(realComplejo[0]);
             float imaginaria = float.Parse(realComplejo[1].Replace('i', ' '));
@@ -34,8 +36,8 @@ namespace FormComplejo
 
         public static Complejo operator *(Complejo c1, Complejo c2)
         {
-            float real = (c1.real * c2.real) - (c1.imaginaria * c2.imaginaria);
-            float imaginaria = (c1.real * c2.imaginaria) - (c2.real * c1.imaginaria);
+            float real = (c1.real * c2.real) + (c1.imaginaria * c2.imaginaria)*(-1);
+            float imaginaria = (c1.real * c2.imaginaria) + (c2.real * c1.imaginaria);
             return new Complejo(real, imaginaria);
         }
 
