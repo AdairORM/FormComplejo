@@ -10,6 +10,7 @@ namespace FormComplejo
         private Complejo complejo1;
         private Complejo complejo2;
         private Complejo complejo3;
+        private Complejo complejo4;
         public Form1()
         {
             InitializeComponent();
@@ -43,7 +44,9 @@ namespace FormComplejo
 
         private void btnConjugar_Click(object sender, EventArgs e)
         {
-            
+            complejo3 = Complejo.Leer(lbResultComplejo.Text);
+            complejo4 = ++ complejo3;
+            lbResultComplejo.Text = complejo4.ToString();
         }
 
         private void btnSumar_MouseHover(object sender, EventArgs e)
