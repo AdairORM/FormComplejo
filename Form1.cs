@@ -33,6 +33,20 @@ namespace FormComplejo
             lbResultComplejo.Text = complejo3.ToString();
         }
 
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            complejo1 = Complejo.Leer(txtbComplejo1.Text);
+            complejo2 = Complejo.Leer(txtbComplejo2.Text);
+            complejo3 = complejo1 * complejo2;
+            lbResultComplejo.Text = complejo3.ToString();
+        }
+
+        private void btnConjugar_Click(object sender, EventArgs e)
+        {
+            lbResultComplejo.Text = complejo3.ToString();
+            
+        }
+
         private void btnSumar_MouseHover(object sender, EventArgs e)
         {
             lbOperador.Text = "+";
@@ -47,5 +61,12 @@ namespace FormComplejo
         {
             lbOperador.Text = "*";
         }
+
+        private void btnConjugar_MouseHover(object sender, EventArgs e)
+        {
+            lbOperador.Text = "c";
+        }
+
+        
     }
 }

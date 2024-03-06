@@ -156,6 +156,7 @@
             this.btnMultiplicar.TabIndex = 7;
             this.btnMultiplicar.Text = "MULTIPLICA";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             this.btnMultiplicar.MouseHover += new System.EventHandler(this.btnMultiplicar_MouseHover);
             // 
             // btnConjugar
@@ -167,6 +168,8 @@
             this.btnConjugar.TabIndex = 8;
             this.btnConjugar.Text = "CONJUGAR";
             this.btnConjugar.UseVisualStyleBackColor = true;
+            this.btnConjugar.Click += new System.EventHandler(this.btnConjugar_Click);
+            this.btnConjugar.MouseHover += new System.EventHandler(this.btnConjugar_MouseHover);
             // 
             // Form1
             // 

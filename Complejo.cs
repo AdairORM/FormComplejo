@@ -21,6 +21,10 @@ namespace FormComplejo
             return new Complejo(real, imaginaria);
         }
 
+        public static Complejo Conjugar(string complejo)
+        {
+            
+        }
 
         public static Complejo operator +(Complejo c1, Complejo c2)
         {
@@ -33,9 +37,17 @@ namespace FormComplejo
             return new Complejo(c1.real - c2.real, c1.imaginaria - c2.imaginaria);
         }
 
+        public static Complejo operator *(Complejo c1, Complejo c2)
+        {
+            float real = (c1.real * c2.real) - (c1.imaginaria * c2.imaginaria);
+            float imaginaria = (c1.real * c2.imaginaria) - (c2.real * c1.imaginaria);
+            return new Complejo(real, imaginaria);
+        }
+               
         public override string ToString()
         {
             return String.Format("{0} + {1}i ",real, imaginaria);
         }
+               
     }
 }
