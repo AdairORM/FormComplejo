@@ -43,7 +43,6 @@ namespace FormComplejo
 
         private void btnConjugar_Click(object sender, EventArgs e)
         {
-            lbResultComplejo.Text = complejo3.ToString();
             
         }
 

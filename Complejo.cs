@@ -21,11 +21,6 @@ namespace FormComplejo
             return new Complejo(real, imaginaria);
         }
 
-        public static Complejo Conjugar(string complejo)
-        {
-            
-        }
-
         public static Complejo operator +(Complejo c1, Complejo c2)
         {
             //Instancia anónima           
@@ -43,6 +38,7 @@ namespace FormComplejo
             float imaginaria = (c1.real * c2.imaginaria) - (c2.real * c1.imaginaria);
             return new Complejo(real, imaginaria);
         }
+
                
         public override string ToString()
         {
